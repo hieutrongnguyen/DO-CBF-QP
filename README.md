@@ -3,6 +3,8 @@
 This repository provides the simulation code accompanying our paper:  
 **"A Simple Disturbance-Observer-Based Safety-Critical Control for Uncertain Affine Nonlinear Systems."**
 
+
+
 ## 🚀 Getting Started
 
 To reproduce the main simulation results, simply run:
@@ -10,6 +12,8 @@ To reproduce the main simulation results, simply run:
 ```matlab
 MAIN.m
 ```
+
+
 
 ## ⚙️ Simulation Options
 
@@ -27,6 +31,8 @@ You can optionally define the following variables before running the simulation 
 ### 3. `Matlab_ver` — Define MATLAB Version for Simulink Compatibility:
 - `Matlab_ver = '2018a'`: Compatible with MATLAB R2018a and higher.
 - `Matlab_ver = '2021a'`: Compatible with MATLAB R2021a and higher.
+
+
   
 ## ⚠️ Nominal DO-CBF with Input Saturation
 
@@ -38,6 +44,8 @@ check_early_termination_Nominal_DO_CBF.m
 
 > 📌 This script is provided separately because running the Simulink model of the Nominal DO-CBF from the command line may terminate early, causing errors and preventing proper output logging.  
 For the plots in our paper, we manually executed the simulation by clicking the **"Run"** button in Simulink to avoid this issue.
+
+
 
 ## ⏱ Note on Simulation Timing
 
