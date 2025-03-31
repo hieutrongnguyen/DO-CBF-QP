@@ -1,20 +1,48 @@
 # Receding-DO-CBF-QP
 
-This repository provides the code for the simulation of our paper "A Simple Disturbance-Observer based Safety-Critical Control for Uncer-
-tain Affine Nonlinear Systems".
+This repository provides the simulation code accompanying our paper:  
+**"A Simple Disturbance-Observer-Based Safety-Critical Control for Uncertain Affine Nonlinear Systems."**
 
-To run the main results, run MAIN.m file. 
+## 🚀 Getting Started
 
-You may define some optional variables to define your simulation choice:
-1. case_num defines the case of simulation:
-case_num = 1: Case 1 (no input saturation) in the paper.
-case_num = 2: Case 2 (no input saturation) in the paper.
-case_num = 3: the case where the input saturation is considered in the paper.
+To reproduce the main simulation results, simply run:
 
-2. run_baselines define whether the baseline controllers are run or not.
-run_baselines = 0: Only simulate the control system with the proposed DO CBF controller.
-run_baselines = 1: Simulate the proposed DO CBF controller together with the nominal CBF, L1 CBF for comparison.
+MAIN.m
 
-3. Matlab_ver define the Matlab version which is appropriate for you to open and run Simulink models.
-case_num = '2018a': compatible for Matlab 2018a or higher verisons.
-case_num = '2021a': compatible for Matlab 2021a or higher verisons.
+
+## ⚙️ Simulation Options
+
+You can optionally define the following variables before running the simulation to customize behavior:
+
+### 1. `case_num` — Select Simulation Scenario:
+- `case_num = 1`: Case 1 (no input saturation), as described in the paper.
+- `case_num = 2`: Case 2 (no input saturation), another configuration in the paper.
+- `case_num = 3`: Case 3 (with input saturation), illustrating safety-critical issues.
+
+### 2. `run_baselines` — Toggle Baseline Controller Comparison:
+- `run_baselines = 0`: Run only the proposed DO-CBF controller.
+- `run_baselines = 1`: Run the DO-CBF controller alongside Nominal CBF and L1-CBF for comparison.
+
+### 3. `Matlab_ver` — Define MATLAB Version for Simulink Compatibility:
+- `Matlab_ver = '2018a'`: Compatible with MATLAB R2018a and higher.
+- `Matlab_ver = '2021a'`: Recommended for newer versions like R2021a.
+
+## ⚠️ Nominal DO-CBF with Input Saturation
+
+To verify the **infeasibility of the Nominal DO-CBF controller** under input saturation (Case 3), run:
+
+check_early_termination_Nominal_DO_CBF.m
+
+> 📌 This script is provided separately because running the Simulink model of the Nominal DO-CBF from the command line may terminate early, causing errors and preventing proper output logging.  
+For the plots in our paper, we manually executed the simulation by clicking the **"Run"** button in Simulink to avoid this issue.
+
+## ⏱ Note on Simulation Timing
+
+When running comparisons via the command line, the reported simulation time will be **longer** than in the paper.  
+This is due to MATLAB/Simulink taking significantly more time to execute models from the command line compared to manual execution through the GUI.
+
+---
+
+Feel free to open issues or contribute improvements!
+
+
