@@ -57,6 +57,11 @@ GTP = G'*P*Gamma;
 alpha_max = 20; epsilon_alpha = 0.1;
 beta_max = 20; epsilon_beta = 0.1;
 
+%% Initial conditions
+x10 = 0; 
+x20 = 20; % Intial velocity of the vehicle
+D0 = 100; % Intial distance between the vehicle and the vehicle ahead
+
 %% Simulation
 if strcmp(Matlab_ver, '2018a')
     addpath('2018a');
