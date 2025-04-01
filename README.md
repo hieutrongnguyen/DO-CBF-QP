@@ -1,7 +1,7 @@
 # Receding-DO-CBF-QP
 
 This repository provides the simulation code accompanying our paper:  
-**"A Simple Disturbance-Observer-Based Safety-Critical Control for Uncertain Affine Nonlinear Systems."**
+**"A Disturbance-Observer-Based Safety-Critical Control for Uncertain Affine Nonlinear Systems."**
 
 
 
