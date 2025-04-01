@@ -13,7 +13,7 @@ run_baselines = 0;
 % Choose the appropriate Matlab version for simulation
 % Matlab_ver = '2021a' or Matlab_ver = '2018a'
 
-Matlab_ver = '2022a';
+Matlab_ver = '2018a';
 
 %% Simulation parameters
 Ts = 0.001;
