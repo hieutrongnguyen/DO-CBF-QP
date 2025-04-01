@@ -41,6 +41,7 @@ To verify the **infeasibility of the Nominal DO-CBF controller** under input sat
 ```matlab
 check_early_termination_Nominal_DO_CBF.m
 ```
+inside the folder with the same name check_early_termination_Nominal_DO_CBF
 
 > 📌 This script is provided separately because running the Simulink model of the Nominal DO-CBF from the command line may terminate early, causing errors and preventing proper output logging.  
 For the plots in our paper, we manually executed the simulation by clicking the **"Run"** button in Simulink to avoid this issue.
