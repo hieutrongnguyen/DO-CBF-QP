@@ -5,7 +5,7 @@ This repository provides the simulation code accompanying our paper:
 
 
 
-## 🚀 Getting Started
+## Getting Started
 
 To reproduce the main simulation results, simply run:
 
@@ -15,7 +15,7 @@ MAIN.m
 
 
 
-## ⚙️ Simulation Options
+## Simulation Options
 
 You can optionally define the following variables before running the simulation to customize behavior:
 
@@ -34,7 +34,7 @@ You can optionally define the following variables before running the simulation 
 
 
   
-## ⚠️ Nominal DO-CBF with Input Saturation
+## Nominal DO-CBF with Input Saturation
 
 To verify the **infeasibility of the Nominal DO-CBF controller** under input saturation (Case 3), run:
 
@@ -48,7 +48,7 @@ For the plots in our paper, we manually executed the simulation by clicking the 
 
 
 
-## ⏱ Note on Simulation Timing
+## Note on Simulation Timing
 
 When running comparisons via the command line, the reported simulation time will be **longer** than in the paper.  
 This is due to MATLAB/Simulink taking significantly more time to execute models from the command line compared to manual execution through the GUI.
@@ -56,5 +56,23 @@ This is due to MATLAB/Simulink taking significantly more time to execute models 
 ---
 
 Feel free to open issues or contribute improvements!
+
+## Citing
+
+Please cite this work as:
+
+```
+@article{Nguyen2025DisturbanceObserver,
+  author    = {Nguyen, H.T. and Nguyen, D.Q. and Nguyen, N.H.},
+  title     = {A Disturbance-observer based Safety-critical Control for Uncertain Affine Nonlinear Systems},
+  journal   = {International Journal of Control, Automation, and Systems},
+  year      = {2025},
+  volume    = {23},
+  pages     = {1129--1138},
+  doi       = {10.1007/s12555-024-0918-9},
+  url       = {https://doi.org/10.1007/s12555-024-0918-9}
+}
+
+```
 
 
