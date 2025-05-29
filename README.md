@@ -3,7 +3,7 @@
 This repository provides the simulation code accompanying our paper:  
 **"A Disturbance-Observer-Based Safety-Critical Control for Uncertain Affine Nonlinear Systems."**
 
-It also provides simulation code for the baselines including the naive CLC-CBF-QP framework and L1 CLC-CBF-QP framework.
+It also provides simulation code for the baselines including the naive CLF-CBF-QP framework and the L1 adaptive CLF-CBF-QP framework.
 
 
 
