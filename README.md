@@ -21,16 +21,16 @@ MAIN.m
 
 You can optionally define the following variables before running the simulation to customize behavior:
 
-### 1. `case_num` — Select Simulation Scenario:
+1. `case_num` — Select Simulation Scenario:
 - `case_num = 1`: Case 1 (no input saturation) in the paper.
 - `case_num = 2`: Case 2 (no input saturation) in the paper.
 - `case_num = 3`: The case where the input saturation is considered in the paper.
 
-### 2. `run_baselines` — Toggle Baseline Controller Comparison:
+2. `run_baselines` — Toggle Baseline Controller Comparison:
 - `run_baselines = 0`: Run only the proposed DO-CBF controller.
 - `run_baselines = 1`: Run the DO-CBF controller alongside the Nominal CBF and L1-CBF for comparison.
 
-### 3. `Matlab_ver` — Define MATLAB Version for Simulink Compatibility:
+3. `Matlab_ver` — Define MATLAB Version for Simulink Compatibility:
 - `Matlab_ver = '2018a'`: Compatible with MATLAB R2018a and higher.
 - `Matlab_ver = '2021a'`: Compatible with MATLAB R2021a and higher.
 
